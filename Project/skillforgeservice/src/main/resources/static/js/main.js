@@ -26,3 +26,10 @@ document.onkeydown = function (e) {
 setTimeout(function(){
 	document.body.classList.add('body_visible');
 }, 200);
+
+window.addEventListener("mousewheel", function(e) {
+  if (e.ctrlKey) {
+    e.preventDefault();
+    return false;
+  }
+});
